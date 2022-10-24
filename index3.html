@@ -5,13 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style3.css">
+    <link rel="stylesheet" href="./assets/css/style3.css">
     <link href="http://fonts.cdnfonts.com/css/donalia" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.cdnfonts.com/css/jost" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <script src="assets/js/app.js"></script>
     <title>wedding invitation</title>
 </head>
 
 <body>
+    <div id="lmask" class="text-center off-mask">
+        <div id="gmap-frame">
+            <h3>Location</h3>
+            <div id="gmap">
+                <iframe id="gmapIframe" height=400px width=100% style="border:0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaOulQACiJzBfqumbsqg_-vKha8fCnL-s&q=USA">
+                </iframe>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="when-where-header text-center">
             <img src="img/butterfly.png" alt="when and where logo">
@@ -19,26 +31,26 @@
             <div class="line-divider"></div>
         </div>
         <div class="when-where">
-            <div class="reception">
+            <div id="reception" class="when-where-boxes">
                 <h2>The Reception</h2>
                 <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
-                <p>Estern Comunity Centure, 525 Road 123, USA</p>
+                <p><span id="receptionAddr">Estern Comunity Centure, 525 Road 123, USA</span></p>
                 <p>Phone : +12345678910</p>
-                <a>See location</a>
+                <a id="map-link-reception">See location</a>
             </div>
-            <div class="ceremory">
-                <h2>The Ceremory</h2>
+            <div id="ceremony" class="when-where-boxes">
+                <h2>The Ceremony</h2>
                 <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
                 <p>Estern Comunity Centure, 525 Road 123, USA</p>
                 <p>Phone : +12345678910</p>
-                <a>See location</a>
+                <a id="map-link-ceremony">See location</a>
             </div>
-            <div class="party">
+            <div id="party" class="when-where-boxes">
                 <h2>Wedding Party</h2>
                 <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
                 <p>Estern Comunity Centure, 525 Road 123, USA</p>
                 <p>Phone : +12345678910</p>
-                <a>See location</a>
+                <a id="map-link-party">See location</a>
             </div>
         </div>
         <div class="footer">
@@ -47,12 +59,10 @@
                     <img class="footer-logo" src="img/footer-logo.png" alt="logo">
                     <p>Follow us on social media for more details and updates</p>
                     <div class="social-media">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                        </ul>
+                        <a href="#/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                        <a href="#/"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                        <a href="#/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="#/"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
                     </div>
                 </div>
                 <div class="contact">
