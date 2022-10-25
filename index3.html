@@ -18,9 +18,11 @@
         <div id="gmap-frame">
             <h3>Location</h3>
             <div id="gmap">
-                <iframe id="gmapIframe" height=400px width=100% style="border:0" loading="lazy" allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaOulQACiJzBfqumbsqg_-vKha8fCnL-s&q=USA">
+                <iframe id="gmapIframe" style="border:0" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaOulQACiJzBfqumbsqg_-vKha8fCnL-s&q=UK">
                 </iframe>
+                <!-- height=400px width=100%  -->
             </div>
         </div>
     </div>
@@ -30,63 +32,64 @@
             <h2>When & where</h2>
             <div class="line-divider"></div>
         </div>
-        <div class="when-where">
+        <div class="when-where-container text-center">
             <div id="reception" class="when-where-boxes">
                 <h2>The Reception</h2>
-                <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
-                <p><span id="receptionAddr">Estern Comunity Centure, 525 Road 123, USA</span></p>
+                <p>Monday, 25 Sep, 2021 1:00 PM – 2:30 PM</p>
+                <p><span id="receptionAddr">St George's Chapel, Windsor Castle, England</span></p>
                 <p>Phone : +12345678910</p>
                 <a id="map-link-reception">See location</a>
             </div>
             <div id="ceremony" class="when-where-boxes">
                 <h2>The Ceremony</h2>
-                <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
-                <p>Estern Comunity Centure, 525 Road 123, USA</p>
+                <p>Monday, 25 Sep, 2021 3:00 PM – 4:30 PM</p>
+                <p><span id="ceremonyAddr">St George's Chapel, Windsor Castle, England</span></p>
                 <p>Phone : +12345678910</p>
                 <a id="map-link-ceremony">See location</a>
             </div>
             <div id="party" class="when-where-boxes">
                 <h2>Wedding Party</h2>
-                <p>Monday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
-                <p>Estern Comunity Centure, 525 Road 123, USA</p>
+                <p>Tuesday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
+                <p><span id="partyAddr">Windsor Castle, Castle Hill, Windsor, England</span></p>
                 <p>Phone : +12345678910</p>
                 <a id="map-link-party">See location</a>
             </div>
         </div>
         <div class="footer">
-            <div class="inner-footer">
-                <div class="footer-left">
+            <div class="inner-footer-container">
+                <div id="social-media-container" class="footer-boxes">
                     <img class="footer-logo" src="img/footer-logo.png" alt="logo">
-                    <p>Follow us on social media for more details and updates</p>
-                    <div class="social-media">
-                        <a href="#/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                        <a href="#/"><i class="fa-brands fa-twitter fa-2xl"></i></a>
-                        <a href="#/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                        <a href="#/"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
+                    <p>Follow us on social media for more details and updates.</p>
+                    <div class="social-media-icons">
+                        <a href="#/"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                        <a href="#/"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="#/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="#/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
                     </div>
                 </div>
-                <div class="contact">
+                <div id="contact" class="footer-boxes">
                     <h3>Address</h3>
                     <p>Would you have any enquiries.
                         Please feel free to contact us</p>
-                    <i></i>
-                    <p>brideEmail@gmail.com</p>
-                    <p>groomEmail@gmail.com</p>
-                    <i></i>
-                    <p>Bride phone number</p>
-                    <p>Groom phone number</p>
+                    <ul>
+                        <li><a href="mailto:bride_email@gmail.com"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i>harry_meghan@gmail.com</a></li>
+                        <li><a href="tel:7946 0999"><i class="fa fa-phone" aria-hidden="true"></i>7946 0999</a>
+                        </li>
+                        <li><a href="https://goo.gl/maps/ddaYXSeTjcidQpig9" target=”_blank”><i class="fa fa-location-dot"></i></i>London SW1A 1AA, United Kingdom</a></li>
+                    </ul>
                 </div>
-                <!-- <div class="photography">
+                <div id="photography" class="footer-boxes">
                     <h3>Photography</h3>
-                    <div class="photos">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <div class="photo-container">
+                    <img src="img/1.jpeg" alt="">
+                    <img src="img/2.jpeg" alt="">
+                    <img src="img/3.jpeg" alt="">
+                    <img src="img/4.jpeg" alt="">
+                    <img src="img/5.jpeg" alt="">
+                    <img src="img/6.jpeg" alt="">
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="copyright text-center">
                 <p>© Copyright 2022 |
