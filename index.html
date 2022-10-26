@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry&Meghan</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Parisienne&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
+
+    <!-- Animated css library  -->
+    <link rel="stylesheet" href="assets/css/animate.css".css">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="assets/css/style1.css" />
+    <link rel="stylesheet" href="./assets/css/style3.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Logo brand & navbar -->
+      <header>
+        <div class="container">
+          <div id="logo-brand">
+            <a href="#">
+              <img src="img/logo-removebg-preview.png" alt="logo brand" />
+            </a>
+          </div>
+          <div class="nav-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="line-break"></div>
+          <nav>
+            <a href="#">HOME</a>
+            <a href="#couple-section">COUPLE</a>
+            <a href="#sweet-story-section">STORY</a>
+            <a href="#">GALLERY</a>
+            <a href="#">RSVP</a>
+            <a href="#">ADDRESS</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner-content">
+          <div class="banner-content-head">
+            <h1 class="wow fadeInLeftBig">Save The Date</h1>
+            <p class="wow fadeInRightBig">
+              We Are Getting Married "Feb 11,2023"
+            </p>
+          </div>
+          <div class="banner-content-coutdown wow fadeInUp">
+            <div>
+              <span id="month"></span>
+              <span>Month</span>
+            </div>
+            <div>
+              <span id="days"></span>
+              <span>Days</span>
+            </div>
+            <div>
+              <span id="hours"></span>
+              <span>Hours</span>
+            </div>
+            <div>
+              <span id="minutes"></span>
+              <span>Mins</span>
+            </div>
+            <div>
+              <span id="seconds"></span>
+              <span>Secs</span>
+            </div>
+          </div>
+        </div>
+        <div class="banner-carousel">
+          <div class="banner-carousel-img">
+            <img
+              class="banner-img active"
+              src="img/8.jpeg"
+              alt="banner image"
+            />
+            <img class="banner-img" src="img/3.jpeg" alt="banner image" />
+            <img class="banner-img" src="img/1.jpeg" alt="banner image" />
+          </div>
+          <div class="control">
+            <div class="preSlider" onclick="preControl()"></div>
+            <div class="nextSlider" onclick="nextControl()"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Couple section -->
+      <section id="couple-section">
+        <div class="container">
+          <div class="couple-content-left wow slideInLeft">
+            <img src="img/harry.webp" alt="couple image" />
+            <h3>Prince Harry</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              voluptatibus facilis odit, quod quasi commodi architecto magni,
+              quas assumenda ad minus
+            </p>
+            <div class="social-network">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="couple-middle-img wow fadeInDown">
+            <img src="img/6.jpeg" alt="couple image" />
+          </div>
+          <div class="couple-content-right wow slideInRight">
+            <img src="img/meghan.jpeg" alt="couple image" />
+            <h3>Meghan Markle</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+              eligendi reprehenderit, ipsa dolorum minima sit minus adipisci
+              unde eius qui.
+            </p>
+            <div class="social-network">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Our Sweet Story -->
+        <section id="sweet-story-section">
+          <div class="sweet-story-title">
+            <img src="img/photo-buffe.png" alt="sweet story title image" />
+            <h2 class="head-content wow fadeInUp">Our Sweet Story</h2>
+            <div class="round-ball"></div>
+          </div>
+          <div class="sweet-story-list">
+            <div class="sweet-story-item">
+              <div class="sweet-story-item-img">
+                <img
+                  class="wow fadeInRightBig"
+                  src="img/first-meet.jpeg"
+                  alt="sweet story image"
+                />
+              </div>
+              <div class="sweet-story-item-content wow bounceIn">
+                <h3>FIRST TIME WE MEET</h3>
+                <p>Feb 06, 2016</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perspiciatis quasi, ea consectetur facilis, quaerat possimus
+                  suscipit et nobis adipisci quia voluptate laudantium eos
+                  similique laboriosam
+                </p>
+              </div>
+            </div>
+            <div class="sweet-story-item">
+              <div class="sweet-story-item-img">
+                <img
+                  class="wow fadeInLeftBig"
+                  src="img/first-date.jpeg"
+                  alt="sweet story image"
+                />
+              </div>
+              <div class="sweet-story-item-content wow bounceIn">
+                <h3>FIRST DATE</h3>
+                <p>Feb 06, 2016</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perspiciatis quasi, ea consectetur facilis, quaerat possimus
+                  suscipit et nobis adipisci quia voluptate laudantium eos
+                  similique laboriosam
+                </p>
+              </div>
+            </div>
+            <div class="sweet-story-item">
+              <div class="sweet-story-item-img">
+                <img
+                  class="wow fadeInRightBig"
+                  src="img/2.2e43e12f.jpg"
+                  alt="sweet story image"
+                />
+              </div>
+              <div class="sweet-story-item-content wow bounceIn">
+                <h3>MARRIAGE PROPOSAL</h3>
+                <p>Feb 06, 2016</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perspiciatis quasi, ea consectetur facilis, quaerat possimus
+                  suscipit et nobis adipisci quia voluptate laudantium eos
+                  similique laboriosam
+                </p>
+              </div>
+            </div>
+            <div class="sweet-story-item">
+              <div class="sweet-story-item-img">
+                <img
+                  class="wow fadeInLeftBig"
+                  src="img/2.2e43e12f.jpg"
+                  alt="sweet story image"
+                />
+              </div>
+              <div class="sweet-story-item-content wow bounceIn">
+                <h3>OUR ENGAGEMENT</h3>
+                <p>Feb 06, 2016</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perspiciatis quasi, ea consectetur facilis, quaerat possimus
+                  suscipit et nobis adipisci quia voluptate laudantium eos
+                  similique laboriosam
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- When&Where section -->
+        <div id="lmask" class="text-center off-mask">
+          <div id="gmap-frame">
+            <h3>Location</h3>
+            <span>x</span>
+            <div id="gmap">
+              <iframe
+                id="gmapIframe"
+                style="border: 0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaOulQACiJzBfqumbsqg_-vKha8fCnL-s&q=UK"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="when-where-header text-center">
+          <img src="img/butterfly.png" alt="when and where logo" />
+          <h2 class="head-content wow fadeInUp">When & where</h2>
+          <div class="round-ball"></div>
+        </div>
+        <div class="when-where-container text-center">
+          <div id="reception" class="when-where-boxes">
+            <h2>The Reception</h2>
+            <p>Monday, 25 Sep, 2021 1:00 PM – 2:30 PM</p>
+            <p>
+              <span id="receptionAddr"
+                >St George's Chapel, Windsor Castle, England</span
+              >
+            </p>
+            <p>Phone : +12345678910</p>
+            <a id="map-link-reception">See location</a>
+          </div>
+          <div id="ceremony" class="when-where-boxes">
+            <h2>The Ceremony</h2>
+            <p>Monday, 25 Sep, 2021 3:00 PM – 4:30 PM</p>
+            <p>
+              <span id="ceremonyAddr"
+                >St George's Chapel, Windsor Castle, England</span
+              >
+            </p>
+            <p>Phone : +12345678910</p>
+            <a id="map-link-ceremony">See location</a>
+          </div>
+          <div id="party" class="when-where-boxes">
+            <h2>Wedding Party</h2>
+            <p>Tuesday, 25 Sep, 2021 1:00 PM – 4:30 PM</p>
+            <p>
+              <span id="partyAddr"
+                >Windsor Castle, Castle Hill, Windsor, England</span
+              >
+            </p>
+            <p>Phone : +12345678910</p>
+            <a id="map-link-party">See location</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="inner-footer-container">
+          <div class="container">
+            <div id="social-media-container" class="footer-boxes">
+              <img class="footer-logo" src="img/footer-logo.png" alt="logo" />
+              <p>Follow us on social media for more details and updates.</p>
+              <div class="social-media-icons">
+                <a href="#/"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#/"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#/"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#/"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+              </div>
+            </div>
+            <div id="contact" class="footer-boxes">
+              <h3>Address</h3>
+              <p>
+                Would you have any enquiries. Please feel free to contact us
+              </p>
+              <ul>
+                <li>
+                  <a href="mailto:bride_email@gmail.com"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i
+                    >harry_meghan@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:7946 0999"
+                    ><i class="fa fa-phone" aria-hidden="true"></i>7946 0999</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://goo.gl/maps/ddaYXSeTjcidQpig9"
+                    target="”_blank”"
+                    ><i class="fa fa-location-dot"></i>London SW1A 1AA, United
+                    Kingdom</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="photography" class="footer-boxes">
+              <h3>Photography</h3>
+              <div class="photo-container">
+                <img src="img/1.jpeg" class="footer-img" alt="" />
+                <img src="img/2.jpeg" class="footer-img" alt="" />
+                <img src="img/3.jpeg" class="footer-img" alt="" />
+                <img src="img/4.jpeg" class="footer-img" alt="" />
+                <img src="img/5.jpeg" class="footer-img" alt="" />
+                <img src="img/6.jpeg" class="footer-img" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div id="fullImgBox" class="full-img text-center">
+            <img id="fullImg" src="img/1.jpeg" alt="" />
+            <span id="closeBtn">x</span>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          <p>
+            © Copyright 2022 | Prince Harry and Meghan Markle | All right
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="assets/js/popup_map.js"></script>
+    <script src="assets/js/footer_gallery.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
