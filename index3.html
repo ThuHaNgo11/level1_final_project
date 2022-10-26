@@ -9,7 +9,8 @@
     <link href="http://fonts.cdnfonts.com/css/donalia" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/jost" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/popup_map.js"></script>
+    <script src="assets/js/footer_gallery.js"></script>
     <title>wedding invitation</title>
 </head>
 
@@ -17,12 +18,12 @@
     <div id="lmask" class="text-center off-mask">
         <div id="gmap-frame">
             <h3>Location</h3>
+            <span>x</span>
             <div id="gmap">
                 <iframe id="gmapIframe" style="border:0" loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaOulQACiJzBfqumbsqg_-vKha8fCnL-s&q=UK">
                 </iframe>
-                <!-- height=400px width=100%  -->
             </div>
         </div>
     </div>
@@ -79,15 +80,21 @@
                         <li><a href="https://goo.gl/maps/ddaYXSeTjcidQpig9" target=”_blank”><i class="fa fa-location-dot"></i></i>London SW1A 1AA, United Kingdom</a></li>
                     </ul>
                 </div>
+
+                <div id="fullImgBox" class="full-img text-center">
+                    <img id="fullImg" src="img/1.jpeg" alt="">
+                    <span id="closeBtn">x</span>
+                </div>
+
                 <div id="photography" class="footer-boxes">
                     <h3>Photography</h3>
                     <div class="photo-container">
-                    <img src="img/1.jpeg" alt="">
-                    <img src="img/2.jpeg" alt="">
-                    <img src="img/3.jpeg" alt="">
-                    <img src="img/4.jpeg" alt="">
-                    <img src="img/5.jpeg" alt="">
-                    <img src="img/6.jpeg" alt="">
+                    <img src="img/1.jpeg" class="footer-img" alt="">
+                    <img src="img/2.jpeg" class="footer-img" alt="">
+                    <img src="img/3.jpeg" class="footer-img" alt="">
+                    <img src="img/4.jpeg" class="footer-img" alt="">
+                    <img src="img/5.jpeg" class="footer-img" alt="">
+                    <img src="img/6.jpeg" class="footer-img" alt="">
                     </div>
                 </div>
             </div>

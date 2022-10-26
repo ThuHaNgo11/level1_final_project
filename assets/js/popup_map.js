@@ -1,4 +1,4 @@
-class App {
+class PopUpMap {
     constructor() {
     }
 
@@ -21,9 +21,9 @@ class App {
         gmapIframe.src = newLocationUrl
     }
 
-    loadMapPopup(app, address) {
-        app.turnOnMask()
-        app.loadMap(address)
+    loadMapPopup(map, address) {
+        map.turnOnMask()
+        map.loadMap(address)
     }
 
     setUpEvents() {
@@ -49,6 +49,6 @@ class App {
 
 
 window.addEventListener('load', function (){
-    let a = new App()
-    a.setUpEvents()
+    let m = new PopUpMap()
+    m.setUpEvents()
 })
