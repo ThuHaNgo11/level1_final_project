@@ -24,6 +24,12 @@ h2 {
   margin: auto;
 }
 
+.head-content {
+  font-size: 2.5rem;
+  color: #002642;
+  margin-top: 20px;
+}
+
 /* Logo brand & navbar */
 header {
   width: 100%;
@@ -203,9 +209,6 @@ nav a:hover::after {
   animation-duration: 0.8s;
 }
 
-/* .banner-img.fade {
-} */
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -331,12 +334,6 @@ nav a:hover::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.sweet-story-title h2 {
-  font-size: 2.5rem;
-  color: #002642;
-  margin-top: 20px;
 }
 
 .round-ball {
