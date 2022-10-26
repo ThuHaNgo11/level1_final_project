@@ -1,28 +1,28 @@
-class Gallery{
+class Gallery {
     constructor() {
     }
 
-    openFullImg(imgUrl){
-        let fullImgBox = document.getElementById('fullImgBox');
-        let fullImg = document.getElementById('fullImg');
+    openFullImg(imgUrl) {
+        return () => {
+            let fullImgBox = document.getElementById('fullImgBox');
+            let fullImg = document.getElementById('fullImg');
 
-        fullImgBox.style.display = "flex";
+            fullImgBox.style.display = "flex";
 
-        fullImg.src = imgUrl;
+            fullImg.src = imgUrl;
+        }
     }
 
-    closeFullImg(){
+    closeFullImg() {
         fullImgBox.style.display = "none";
     }
 
-
-
-    setUpEvents(){
+    setUpEvents() {
         let smallImgs = document.getElementsByClassName
-        ('footer-img')
+            ('footer-img')
         let closeBtn = document.getElementById('closeBtn')
 
-        for(const img of smallImgs){
+        for (const img of smallImgs) {
             img.addEventListener('click', this.openFullImg(img.getAttribute('src')))
 
             closeBtn.addEventListener('click', this.closeFullImg)
@@ -30,7 +30,7 @@ class Gallery{
     }
 }
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     let g = new Gallery()
     g.setUpEvents()
 })
