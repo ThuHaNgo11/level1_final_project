@@ -18,14 +18,18 @@ class Gallery {
     }
 
     setUpEvents() {
+        //close full img when click close button or anywhere on screen
+        let fullImgBox = document.getElementById('fullImgBox')
+        fullImgBox.addEventListener('click', this.closeFullImg)
+        let closeBtn = document.getElementById('closeBtn')
+        closeBtn.addEventListener('click', this.closeFullImg)
+
+        //get small img objects and add events for each img
         let smallImgs = document.getElementsByClassName
             ('footer-img')
-        let closeBtn = document.getElementById('closeBtn')
 
         for (const img of smallImgs) {
             img.addEventListener('click', this.openFullImg(img.getAttribute('src')))
-
-            closeBtn.addEventListener('click', this.closeFullImg)
         }
     }
 }
