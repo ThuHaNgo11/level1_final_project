@@ -565,6 +565,11 @@ nav a:hover::after {
     width: 150px;
   }
 
+  .round-ball::after,
+  .round-ball::before {
+    width: 110px;
+  }
+
   .couple-middle-img {
     width: 310px;
   }
