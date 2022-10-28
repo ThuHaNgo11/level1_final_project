@@ -43,8 +43,8 @@
             <a href="#">HOME</a>
             <a href="#couple-section">COUPLE</a>
             <a href="#sweet-story-section">STORY</a>
-            <a href="#">GALLERY</a>
-            <a href="#">RSVP</a>
+            <a href="#rsvp">RSVP</a>
+            <a href="#gallery">GALLERY</a>
             <a href="#when-where">ADDRESS</a>
           </nav>
         </div>
@@ -233,7 +233,7 @@
 
       <div class="container">
         <!--Summit form-->
-        <section class="rsvp_section section-padding" id="rsvp">
+        <section id="rsvp" class="rsvp_section section-padding" id="rsvp">
           <div class="container">
             <div class="content_wrapper">
               <div class="rsvpForm_area">
@@ -253,6 +253,7 @@
                 <form class="contact-validation-active">
                   <div class="form-field">
                     <input
+                      id="name"
                       type="text"
                       name="name"
                       class="form-control"
@@ -263,7 +264,8 @@
                   </div>
                   <div class="form-field">
                     <input
-                      type="number"
+                      id="phoneNumber"
+                      type="text"
                       name="number"
                       class="form-control"
                       placeholder="Your Number"
@@ -277,8 +279,8 @@
                         type="radio"
                         id="accept"
                         name="radio-group"
-                        class="d-none"
-                        checked=""
+                        class="d-none choiceRadio"
+                        checked
                       />
                       <label for="accept"> Yes, I will be there </label>
                     </p>
@@ -287,14 +289,19 @@
                         type="radio"
                         id="not"
                         name="radio-group"
-                        class="d-none"
+                        class="d-none choiceRadio"
                       />
                       <label for="not"> Sorry, I can’t come </label>
                     </p>
                   </div>
                   <div class="form-field">
-                    <select type="text" class="form-control" name="guest">
-                      <option>Number Of Guests</option>
+                    <select
+                      id="numberGuest"
+                      type="text"
+                      class="form-control"
+                      name="guest"
+                    >
+                      <option disabled selected>Number Of Guests</option>
                       <option>01</option>
                       <option>02</option>
                       <option>03</option>
@@ -305,6 +312,7 @@
                   </div>
                   <div class="form-field">
                     <input
+                      id="attend"
                       type="text"
                       name="attend"
                       class="form-control"
@@ -314,7 +322,12 @@
                     <div class="errorMessage"></div>
                   </div>
                   <div class="form-field">
-                    <select type="text" class="form-control" name="meal">
+                    <select
+                      id="meal"
+                      type="text"
+                      class="form-control"
+                      name="meal"
+                    >
                       <option>Meal Preferences</option>
                       <option>Chicken Soup</option>
                       <option>Motton Kabab</option>
@@ -325,7 +338,9 @@
                     <div class="errorMessage"></div>
                   </div>
                   <div class="submit-area">
-                    <button type="submit" class="theme-btn">Submit Now</button>
+                    <button id="submitBtn" type="button" class="theme-btn">
+                      Submit Now
+                    </button>
                   </div>
                 </form>
                 <div class="border-style"></div>
@@ -333,6 +348,10 @@
             </div>
           </div>
         </section>
+        <div id="modal-submit">
+          <h2 id="modal-submit-content">Thank you for attending our party</h2>
+          <i id="closeModal" class="fa-solid fa-xmark"></i>
+        </div>
 
         <!--Gallery-->
         <section class="gallery_sec section-padding pb-0" id="gallery">
@@ -447,6 +466,10 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div id="modal-gallery">
+            <img src="img/image 9.jpg" alt="Gallery" />
+            <i id="closeModalGallery" class="fa-solid fa-xmark"></i>
           </div>
         </section>
 
