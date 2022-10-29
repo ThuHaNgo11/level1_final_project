@@ -20,7 +20,7 @@ const $hoursEle = document.querySelector("#hours");
 const $minutesEle = document.querySelector("#minutes");
 const $secondsEle = document.querySelector("#seconds");
 
-const countDown = (y, m, d) => {
+const countDown = (d, m, y) => {
   const now = new Date();
   const daysOfMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
@@ -32,6 +32,7 @@ const countDown = (y, m, d) => {
     hoursCount = 0,
     minutesCount = 0,
     secondsCount = 0;
+  m = m - 1;
 
   // Month countdown
   if (month === m) {
@@ -70,7 +71,7 @@ const countDown = (y, m, d) => {
   $secondsEle.innerHTML = secondsCount;
 };
 
-setInterval(() => countDown(2023, 1, 11), 1000);
+setInterval(() => countDown(11, 2, 2023), 1000);
 
 // Carousel
 const $bannerImg = document.querySelectorAll(".banner-img");
