@@ -58,11 +58,30 @@ const $errorMessage = document.getElementsByClassName("errorMessage");
 const $modalSubmit = document.getElementById("modal-submit");
 const $closeModal = document.getElementById("closeModal");
 const $modalSubmitContent = document.getElementById("modal-submit-content");
+const $notRadio = document.getElementById("not");
 
 const regName = /^[a-zA-Z ]+$/;
 
+const reset = () => {
+  $name.value = "";
+  $phoneNumber.value = "";
+  $numberGuest.selectedIndex = 0;
+  $attend.value = "";
+  $meal.selectedIndex = 0;
+};
+
+$notRadio.addEventListener("click", () => {
+  $errorMessage[2].innerHTML = "";
+  $errorMessage[3].innerHTML = "";
+  $errorMessage[4].innerHTML = "";
+});
+
 $submitBtn.addEventListener("click", () => {
   let flag = true;
+  let choice = "";
+  for (let radio of $choiceRadio) {
+    if (radio.checked) choice = radio.getAttribute("id");
+  }
 
   if ($name.value) {
     if (!regName.test($name.value)) {
@@ -89,35 +108,32 @@ $submitBtn.addEventListener("click", () => {
     flag = false;
   }
 
-  if (isNaN($numberGuest.value)) {
-    $errorMessage[2].innerHTML = "The guests field is required";
-    flag = false;
-  }
+  if (choice === "accept") {
+    if (isNaN($numberGuest.value)) {
+      $errorMessage[2].innerHTML = "The guests field is required";
+      flag = false;
+    }
 
-  if (!$attend.value) {
-    $errorMessage[3].innerHTML = "The attend field is required";
-    flag = false;
-  }
+    if (!$attend.value) {
+      $errorMessage[3].innerHTML = "The attend field is required";
+      flag = false;
+    }
 
-  if ($meal.value === "Meal Preferences") {
-    $errorMessage[4].innerHTML = "The meal field is required";
-    flag = false;
-  }
-
-  let choice = "";
-  for (let radio of $choiceRadio) {
-    if (radio.checked) choice = radio.getAttribute("id");
+    if ($meal.value === "Meal Preferences") {
+      $errorMessage[4].innerHTML = "The meal field is required";
+      flag = false;
+    }
   }
 
   if (flag && choice === "accept") {
     $modalSubmit.style.display = "flex";
     $modalSubmitContent.innerHTML = "Thank you for attending our wedding party";
+    reset();
   } else if (flag && choice === "not") {
     $modalSubmit.style.display = "flex";
     $modalSubmitContent.innerHTML = "We sympathize when you do not attend";
+    reset();
   }
-
-  console.log(choice);
 });
 
 $name.addEventListener("change", () => {
