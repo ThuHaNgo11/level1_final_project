@@ -432,6 +432,26 @@ nav a:hover::after {
   }
 }
 
+@media screen and (max-width: 896px) {
+  nav a {
+    margin: 0 5px;
+  }
+
+  .banner-content-coutdown div {
+    width: 130px;
+    height: 130px;
+    margin-left: -10px;
+  }
+
+  .banner-content-coutdown div span:first-child {
+    font-size: 1.8rem;
+  }
+
+  .banner-content-coutdown div span:last-child {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Logo brand and navbar */
   .nav-button {
@@ -468,25 +488,12 @@ nav a:hover::after {
     overflow: hidden;
   }
 
-  .banner-content-coutdown div {
-    width: 130px;
-    height: 130px;
-    margin-left: -10px;
-  }
-
   .banner-content-head h1 {
     font-size: 4rem;
   }
 
   .banner-content-head p {
     font-size: 1.5rem;
-  }
-  .banner-content-coutdown div span:first-child {
-    font-size: 1.8rem;
-  }
-
-  .banner-content-coutdown div span:last-child {
-    font-size: 0.8rem;
   }
 
   /* couple section */
@@ -524,11 +531,7 @@ nav a:hover::after {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-
+@media screen and (max-width: 550px) {
   .banner-content-head h1 {
     font-size: 2.5rem;
   }
@@ -543,6 +546,17 @@ nav a:hover::after {
     grid: 1fr 1fr / 1fr 1fr 1fr;
   }
 
+  .banner-content-coutdown div:nth-child(4),
+  .banner-content-coutdown div:last-child {
+    transform: translateX(50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
   .nextSlider,
   .preSlider {
     width: 40px;
@@ -553,11 +567,6 @@ nav a:hover::after {
   .preSlider::after {
     width: 8px;
     height: 8px;
-  }
-
-  .banner-content-coutdown div:nth-child(4),
-  .banner-content-coutdown div:last-child {
-    transform: translateX(50px);
   }
 
   #couple-section::before,
